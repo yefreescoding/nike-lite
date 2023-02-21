@@ -4,15 +4,19 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing Page</title>
+  <link rel="stylesheet" href="Styles/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gajraj+One&family=Lato:wght@300;400;700;900&family=Oswald:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <title>Landing Page</title>
 </head>
 <!--Here start the content of the page.-->
 <body>
   <!--The top of he page.-->
-  <header>
-    <div>
-      <img src="Images/LogoWebPage.png" alt="Web page Logo" width="80px">
-      <h3>Train with Us</h3>
+  <header class="nav-varHeader">
+    <div class="logo-navDiv">
+      <img src="Images/LogoWebPage.png" alt="Web page Logo">
+      <h3 class="logo-letterNav">Sweat with Us</h3>
     </div>
     <nav>
       <a href="">Features</a>
@@ -23,8 +27,8 @@
     </nav>
   </header>
   <!--First main content of the web page-->
-  <main>
-    <div>
+  <main class="main-contentContainer">
+    <div class="info-mainDiv">
       <p>We are now allowing early-access for users. <a href="">Learn more</a></p>
       <h1>Join the biggest fitness community with no effort! </h1>
       <p>
@@ -37,25 +41,18 @@
         <button type="submit">Join Waitlist</button>
       </form>
     </div>
-    <div>
-      <img src="images/pexels-viridiana-o-rivera-14591734.jpg" alt="Woman doing exercise" width="400px">
+    <div class="image-mainDiv">
+      <img src="Images/pexels-alteredsnaps-12890888.jpg" alt="Woman doing exercise">
     </div>
-    <footer>
-      <p>Here you have our Socials</p>
-      <a href="">Facebook</a>
-      <a href="">Instagram</a>
-      <a href="">LinkedIn</a>
-      <a href="">TikTok</a>
-    </footer>
   </main>
   <!--Second main content of the web page.-->
-  <main>
+  <main class="second-mainDiv">
     <div>
       <h2>Follow along with our pre-made routines and diets</h2>
     </div>
-    <div>
+    <div class="planesDiv">
       <div>
-        <img src="Images/pexels-mart-production-8846108.jpg" alt="Girl doing low exercise" width="250px" >
+        <img src="Images/pexels-mart-production-8846108.jpg" alt="Girl doing low exercise" >
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           Nunc ac tellus convallis, convallis lectus sit amet, 
@@ -63,7 +60,7 @@
         </p>
       </div>
       <div>
-        <img src="Images/pexels-ricardo-cl-14106028.jpg" alt="Couple stretching" width="250px">
+        <img src="Images/pexels-elina-fairytale-3823185.jpg" alt="Couple stretching">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           Nunc ac tellus convallis, convallis lectus sit amet, 
@@ -71,7 +68,7 @@
         </p>
       </div>
       <div>
-        <img src="Images/pexels-ricardo-cl-14106028.jpg" alt="Couple stretching" width="250px">
+        <img src="Images/pexels-viridiana-o-rivera-14591734.jpg" alt="Couple stretching">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           Nunc ac tellus convallis, convallis lectus sit amet, 
@@ -79,7 +76,7 @@
         </p>
       </div>
       <div>
-        <img src="Images/pexels-ricardo-cl-14106028.jpg" alt="Couple stretching" width="250px">
+        <img src="Images/pexels-leon-ardho-2468339.jpg" alt="Couple stretching">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           Nunc ac tellus convallis, convallis lectus sit amet, 
@@ -89,20 +86,25 @@
     </div>
   </main>
   <!--3 main content of the page, Testimonials.-->
-  <main>
-    <h2>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-      Etiam accumsan semper tristique. In vel dolor convallis, 
-      consectetur quam ac, fringilla neque. Donec eget dui quis 
-      lorem porta condimentum. Sed porttitor est nec ipsum varius 
-      accumsan. Praesent quam magna, ultrices sit amet ultricies 
-      in, maximus et.
-    </h2>
-    <span>- Marina De Los Palotes.</span>
+  <main class="testi-mainDiv">
+    <div class="img-testimoDiv">
+      <img src="Images/pexels-mikhail-nilov-6707081.jpg" alt="Girl of the testimonial doing Yoga.">
+    </div>
+    <div class="testi-data">
+        <h2>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Etiam accumsan semper tristique. In vel dolor convallis, 
+          consectetur quam ac, fringilla neque. Donec eget dui quis 
+          lorem porta condimentum. Sed porttitor est nec ipsum varius 
+          accumsan. Praesent quam magna, ultrices sit amet ultricies 
+          in, maximus et.
+        </h2>
+      <span>- Marina De Los Palotes.</span>
+    </div>
   </main>
   <!--4 main content, Sign up form.-->
-  <main>
-    <form action="">
+  <main class="sign-upForm">
+    <form class="form-signUp" action="">
       <div>
         <h3>Don't waste more time!</h3>
         <p>Sign up for Today and you'll get a 70% off your first month.</p>
@@ -113,7 +115,7 @@
     </form>
   </main>
   <!--End of the page. The Footer.-->
-  <footer>
+  <footer class="page-endFooter">
     <div>
       <span>With Sweat with us</span>
       <p>

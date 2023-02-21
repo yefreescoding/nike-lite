@@ -1,0 +1,115 @@
+$color-principalFont: #1f2937;
+$specialFont: 'Gajraj One', cursive;
+$subtextFont: 'Oswald', sans-serif;
+
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border: 1px solid red;
+}
+// Navegation var styles.
+.nav-varHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  div {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    
+
+      img {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        border-radius: 160px;
+      }
+  }
+
+  nav {
+    flex: 1;
+    display: flex;
+    justify-content: end;
+
+    a {
+      margin: 0px 8px;
+    }
+  }
+
+}
+
+// Styles for the main container\
+.main-contentContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 2%;
+}
+
+.info-mainDiv {
+
+}
+
+.image-mainDiv {
+  display: flex;
+  justify-content: center;
+
+  img {
+    width: 60%;
+  }
+}
+
+// Styles for the #2 container.
+.second-mainDiv {
+  text-align: center;
+}
+.planesDiv {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  column-gap: 20px;
+  padding: 2%;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+// Styles for the #3 container.
+.testi-mainDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+}
+
+.img-testimoDiv {
+  width: 100%;
+
+  img {
+    width: 100%;
+  }
+}
+
+// Styles for the #4 container.
+.sign-upForm {
+  padding: 2%;
+
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
+  }
+}
+
+// Styles for the footer
+.page-endFooter {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  column-gap: 20px;
+  div {
+    display: grid;
+  }
+}
