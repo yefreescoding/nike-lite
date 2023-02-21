@@ -313,9 +313,34 @@ body html {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
   column-gap: 20px;
+  padding: 2%;
+  background-color: rgb(197, 197, 197);
+  font-family: "Oswald";
 }
 .page-endFooter div {
   display: grid;
+}
+.page-endFooter div a {
+  color: #3d3d3d;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+.page-endFooter div a:hover {
+  color: #111;
+}
+.page-endFooter div p {
+  color: #3d3d3d;
+  font-size: 18px;
+}
+
+.column-link-main {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.link-div {
+  padding-left: 20%;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -336,7 +336,31 @@ body {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
   column-gap: 20px;
+  padding: 2%;
+  background-color: rgb(197, 197, 197);
+  font-family: $subtextFont;
   div {
     display: grid;
+    a {
+      color: #3d3d3d;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.25s;
+    }
+    a:hover {
+      color: #111;
+    }
+    p {
+      color: #3d3d3d;
+      font-size: 18px;
+    }
   }
+}
+
+.column-link-main {
+  font-weight: bold;
+  font-size: 18px;
+}
+.link-div {
+  padding-left: 20%;
 }
