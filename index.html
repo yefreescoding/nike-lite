@@ -4,23 +4,22 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="Styles/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Gajraj+One&family=Lato:wght@300;400;700;900&family=Oswald:wght@200;300;400;600;700&display=swap" rel="stylesheet">
-    <title>Landing Page</title>
+  <link rel="stylesheet" href="Styles/styles.css">
+  <title>Landing Page</title>
 </head>
 <!--Here start the content of the page.-->
 <body>
   <!--The top of he page.-->
   <header class="nav-varHeader">
     <div class="logo-navDiv">
-      <img src="Images/LogoWebPage.png" alt="Web page Logo">
       <h3 class="logo-letterNav">Sweat with Us</h3>
     </div>
     <nav>
-      <a href="">Features</a>
-      <a href="">Affiliates</a>
+      <a href="#planes">Features</a>
+      <a href="#testimonials">Affiliates</a>
       <a href="">Pricing</a>
       <a href="">Communities</a>
       <button>Join The Family</button>
@@ -29,15 +28,15 @@
   <!--First main content of the web page-->
   <main class="main-contentContainer">
     <div class="info-mainDiv">
-      <p>We are now allowing early-access for users. <a href="">Learn more</a></p>
+      <p class="early-p">We are now allowing early-access for users! <a href="">Learn more  &rarr;</a> </p>
       <h1>Join the biggest fitness community with no effort! </h1>
-      <p>
-        <span>Train with us</span> offers the tools you need to start achieving your dream fitness goals
-        with the help of our community with little to no effort. Simply setup your workspace, <span>Train with us</span>
+      <p class="descr-p">
+        <span>Sweat with us</span> offers the tools you need to start achieving your dream fitness goals
+        with the help of our community with little to no effort. Simply setup your workspace, <span>Sweat with us</span>
         will manage everything from diets, to personalize exercises, to content from one central dashboard.
       </p>
       <form action="">
-        <input type="">
+        <input type="email" placeholder="Your e-mail here">
         <button type="submit">Join Waitlist</button>
       </form>
     </div>
@@ -46,7 +45,7 @@
     </div>
   </main>
   <!--Second main content of the web page.-->
-  <main class="second-mainDiv">
+  <main id="planes" class="second-mainDiv">
     <div>
       <h2>Follow along with our pre-made routines and diets</h2>
     </div>
@@ -54,7 +53,7 @@
       <div>
         <img src="Images/pexels-mart-production-8846108.jpg" alt="Girl doing low exercise" >
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          If you're a beginner, We Got You!. Consectetur adipiscing elit.
           Nunc ac tellus convallis, convallis lectus sit amet, 
           fermentum felis. Donec interdum.
         </p>
@@ -62,17 +61,17 @@
       <div>
         <img src="Images/pexels-elina-fairytale-3823185.jpg" alt="Couple stretching">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Nunc ac tellus convallis, convallis lectus sit amet, 
+          Do you like Yoga? We got the perfect plans for you.
+          Specialized teachers and Nunc ac tellus convallis, convallis lectus sit amet, 
           fermentum felis. Donec interdum.
         </p>
       </div>
       <div>
         <img src="Images/pexels-viridiana-o-rivera-14591734.jpg" alt="Couple stretching">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Nunc ac tellus convallis, convallis lectus sit amet, 
-          fermentum felis. Donec interdum.
+          Ready for crush those weights dolor sit amet, elit.
+          The best challenges for you. Nunc ac tellus convallis, 
+          convallis lectus sit amet, fermentum felis. Donec interdum.
         </p>
       </div>
       <div>
@@ -86,7 +85,7 @@
     </div>
   </main>
   <!--3 main content of the page, Testimonials.-->
-  <main class="testi-mainDiv">
+  <main id="testimonials" class="testi-mainDiv">
     <div class="img-testimoDiv">
       <img src="Images/pexels-mikhail-nilov-6707081.jpg" alt="Girl of the testimonial doing Yoga.">
     </div>

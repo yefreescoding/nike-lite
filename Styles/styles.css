@@ -1,38 +1,177 @@
 * {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   border: 1px solid red;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+body html {
+  scroll-behavior: smooth;
 }
 
 .nav-varHeader {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: white;
+  border-bottom: 0.8px solid rgb(181, 181, 181);
+  padding: 0px 2%;
 }
 .nav-varHeader div {
-  flex: 1;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 .nav-varHeader div img {
   width: 60px;
   height: 60px;
   object-fit: cover;
   border-radius: 160px;
+  margin-right: 10px;
+}
+.nav-varHeader div h3 {
+  font-family: "Gajraj One";
+  font-size: 17px;
+  text-transform: uppercase;
+  font-variant: small-caps;
+  letter-spacing: 1.5px;
 }
 .nav-varHeader nav {
   flex: 1;
   display: flex;
+  align-items: center;
   justify-content: end;
+  column-gap: 25px;
 }
 .nav-varHeader nav a {
-  margin: 0px 8px;
+  font-family: "Oswald";
+  font-weight: 600;
+  font-size: 14px;
+  color: rgb(66, 66, 66);
+  text-decoration: none;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+.nav-varHeader nav a:hover {
+  transform: scale(1.1, 1.1);
+  text-decoration: underline;
+}
+.nav-varHeader nav button {
+  margin: 2px;
+  font-family: "Oswald";
+  font-size: 17px;
+  font-weight: 600;
+  padding: 10px 30px;
+  background-color: white;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+.nav-varHeader nav button:hover {
+  transform: scale(1.1, 1.1);
+  box-shadow: 0px 0px 16px rgb(183, 183, 183);
 }
 
 .main-contentContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  place-items: center;
   align-items: center;
   padding: 2%;
+  background-color: white;
+}
+
+.info-mainDiv {
+  display: grid;
+  align-items: center;
+  row-gap: 20px;
+  padding: 2%;
+  width: 100%;
+}
+.info-mainDiv h1 {
+  color: #111;
+  margin: 0px;
+  font-family: "Oswald";
+  font-size: 50px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.info-mainDiv p {
+  margin: 0px;
+  font-size: 22px;
+  line-height: 30px;
+  font-family: "Oswald";
+}
+.info-mainDiv p span {
+  color: black;
+  font-weight: 600;
+}
+.info-mainDiv form {
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 0px;
+}
+.info-mainDiv form input {
+  font-family: "Oswald";
+  font-size: 20px;
+  width: 60%;
+  padding: 8px 10px;
+  border: solid 0.3px grey;
+  border-radius: 5px;
+  transition: all 0.25s;
+}
+.info-mainDiv form input:hover {
+  border: solid 0.3px #111;
+  box-shadow: 0px 0px 18px rgba(152, 152, 152, 0.656);
+}
+.info-mainDiv form input:active {
+  background-color: rgb(207, 207, 207);
+}
+.info-mainDiv form input:focus {
+  background-color: rgb(231, 231, 231);
+  border: none;
+  outline: none;
+}
+.info-mainDiv form button {
+  font-family: "Oswald";
+  font-weight: 600;
+  font-size: 20px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: white;
+  color: #111;
+  transition: all 0.25s;
+  border: none;
+}
+.info-mainDiv form button:hover {
+  background: #111;
+  color: white;
+  box-shadow: 0px 0px 18px rgba(152, 152, 152, 0.656);
+}
+
+.early-p {
+  background-color: #111;
+  color: white;
+  padding: 8px 20px;
+  width: 80%;
+  border-radius: 28px;
+}
+.early-p a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.early-p a:hover {
+  text-decoration: underline;
+}
+
+.descr-p {
+  color: rgb(92, 92, 92);
 }
 
 .image-mainDiv {
@@ -40,29 +179,48 @@
   justify-content: center;
 }
 .image-mainDiv img {
-  width: 60%;
+  width: 65%;
+  border-radius: 8px;
 }
 
 .second-mainDiv {
   text-align: center;
+  font-family: "Oswald";
+  color: white;
+  background-color: #111;
+  border: black 1px solid;
+}
+.second-mainDiv h2 {
+  font-size: 40px;
+  background-color: #111;
 }
 
 .planesDiv {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   align-items: center;
-  column-gap: 20px;
+  column-gap: 30px;
+  width: 100%;
   padding: 2%;
+  margin-bottom: 80px;
 }
 .planesDiv img {
   width: 100%;
   object-fit: cover;
+  border-radius: 8px;
+}
+.planesDiv p {
+  width: 100%;
+  font-size: 19px;
+  text-align: justify;
 }
 
 .testi-mainDiv {
+  font-family: "Oswald";
   display: flex;
   justify-content: center;
   align-items: center;
+  column-gap: 60px;
   padding: 2%;
 }
 
@@ -71,6 +229,7 @@
 }
 .img-testimoDiv img {
   width: 100%;
+  border-radius: 16px;
 }
 
 .sign-upForm {
