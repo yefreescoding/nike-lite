@@ -1,4 +1,4 @@
-## Odin Project assignment: Gym Landing Page.
+# Odin Project assignment: Gym Landing Page.
 
 Welcome to the Gym Landing Page project! This project was developed as part of the Full Stack Web Development Bootcamp. In this assignment, I had the opportunity to showcase my skills in creating a web application using JavaScript for both the front-end and the back-end.
 
