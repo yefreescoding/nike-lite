@@ -1,12 +1,29 @@
 ---
+const navLinks = [
+  {
+    name: 'Men',
+    href: '/men/',
+  },
+  {
+    name: 'Women',
+    href: '/women',
+  },
+  {
+    name: 'Kids',
+    href: '/kids/',
+  },
+];
 ---
 
 <nav aria-label="Bar navigation of the website">
   <ul aria-label="Navigation links">
-    <li><a href="#planes">Features</a></li>
-    <li><a href="#testimonials">Affiliates</a></li>
-    <li><a href="#pricing">Pricing</a></li>
-    <li><a href="">Communities</a></li>
+    {
+      navLinks.map((link) => (
+        <li>
+          <a href={link.href}>{link.name}</a>
+        </li>
+      ))
+    }
   </ul>
   <a href="/joinUs/">Join Us</a>
 </nav>
