@@ -1,0 +1,145 @@
+---
+const featured = [
+  {
+    name: 'Air Force 1',
+    href: '/',
+  },
+  {
+    name: 'Jordan 1',
+    href: '/',
+  },
+  {
+    name: 'Metcon',
+    href: '/',
+  },
+  {
+    name: 'Air Max 270',
+    href: '/',
+  },
+];
+const shoes = [
+  {
+    name: 'All shoes',
+    href: '/',
+  },
+  {
+    name: 'Jordan Shoes',
+    href: '/',
+  },
+  {
+    name: 'Running shoes',
+    href: '/',
+  },
+  {
+    name: 'Basketball shoes',
+    href: '/',
+  },
+  {
+    name: 'football shoes',
+    href: '/',
+  },
+];
+const clothing = [
+  {
+    name: 'All clothing',
+    href: '/',
+  },
+  {
+    name: 'Tops & T-shirt',
+    href: '/',
+  },
+  {
+    name: 'Shorts',
+    href: '/',
+  },
+  {
+    name: 'Hoodies & pullovers',
+    href: '/',
+  },
+  {
+    name: 'Joggers & Sweatpants',
+    href: '/',
+  },
+];
+const kids = [
+  {
+    name: 'Infant & Toddler shoes',
+    href: '/',
+  },
+  {
+    name: 'Kids shoes',
+    href: '/',
+  },
+  {
+    name: 'kids shoes',
+    href: '/',
+  },
+  {
+    name: 'Kids basketball shoes',
+    href: '/',
+  },
+  {
+    name: 'kids running shoes',
+    href: '/',
+  },
+];
+---
+
+<footer class="page-endFooter">
+  <div>
+    <span class="column-link-main">NikeLite</span>
+    <p>
+      This is a side project build to learn purposes all the images, information
+      and data showed on this website is owned by Nike inc
+    </p>
+    <span>Made with Love By Yefree De Los Santos Valdez</span>
+  </div>
+  <div class="link-div">
+    <h3 class="column-link-main">Featured</h3>
+    <ul>
+      {
+        featured.map((link) => (
+          <li>
+            <a href={link.href}>{link.name}</a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+  <div class="link-div">
+    <h3 class="column-link-main">Shoes</h3>
+    <ul>
+      {
+        shoes.map((link) => (
+          <li>
+            <a href={link.href}>{link.name}</a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+  <div class="link-div">
+    <h3 class="column-link-main">clothing</h3>
+    <ul>
+      {
+        clothing.map((link) => (
+          <li>
+            <a href={link.href}>{link.name}</a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+  <div class="link-div">
+    <h3 class="column-link-main">kids'</h3>
+    <ul>
+      {
+        kids.map((link) => (
+          <li>
+            <a href={link.href}>{link.name}</a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</footer>

@@ -1,16 +1,25 @@
 ---
 // Layout import
-import DefaultLayout from '../layouts/DEfaultLayout.astro';
+import DefaultLayout from '../layouts/DefaultLayout.astro';
 
 // Componnet imports
 import Header from '../components/Header.astro';
 import SectionHero from '../components/SectionHero.astro';
+import SectionFeatured from '../components/SectionFeatured.astro';
+import SectionTrending from '../components/SectionTrending.astro';
+import SectionShoes from '../components/SectionShoes';
+import Footer from '../components/Footer.astro';
+import SectionMember from '../components/SectionMember.astro';
 ---
 
 <DefaultLayout>
   <Header />
   <main>
     <SectionHero />
+    <SectionFeatured />
+    <SectionTrending />
+    <SectionShoes client:load />
+    <SectionMember />
   </main>
-  <footer></footer>
+  <Footer />
 </DefaultLayout>
