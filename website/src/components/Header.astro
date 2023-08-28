@@ -2,11 +2,7 @@
 import Nav from './Nav.astro';
 ---
 
-<header
-  id="header"
-  class="flex items-center justify-between"
-  data-fixed="false"
->
+<header id="header" class="hide" data-fixed="false">
   <a
     href="/"
     aria-label="Website logo"
@@ -19,31 +15,19 @@ import Nav from './Nav.astro';
 
 <style>
   header {
-    padding: 0 2rem;
-    position: relative;
+    @apply relative flex items-center justify-between px-8;
     transition: all 300ms ease-in-out;
   }
 
-  header {
+  header.hide {
+    transform: translateY(-100%);
   }
 
   header[data-fixed='true'] {
-    transition: all 300ms ease-in-out;
-    background-color: var(--theme-bg);
     position: fixed;
     inset: 0 0 auto 0;
+    background-color: var(--theme-bg);
+    transform: translateY(0);
+    transition: all 300ms ease-in-out;
   }
 </style>
-
-<script>
-  const header = document.getElementById('header');
-
-  window.addEventListener('scroll', () => {
-    if (window.pageYOffset >= 100) {
-      header.setAttribute('data-fixed', 'true');
-    } else {
-      header.setAttribute('data-fixed', 'false');
-    }
-    console.log(window.pageYOffset);
-  });
-</script>
