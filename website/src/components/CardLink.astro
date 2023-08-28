@@ -1,11 +1,17 @@
 ---
-const { name, image } = Astro.props;
+interface Props {
+  name: string;
+  image: string;
+  alt: string;
+}
+
+const { name, image, alt } = Astro.props;
 ---
 
 <a href="/">
   <article>
     <div>
-      <img src={image} alt="" />
+      <img src={image} alt={alt} />
     </div>
     <h3>{name}</h3>
   </article>

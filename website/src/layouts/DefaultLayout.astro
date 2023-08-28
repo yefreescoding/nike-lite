@@ -1,10 +1,12 @@
 ---
 import HeadSeo from '../components/HeadSeo.astro';
+
+const { title } = Astro.props;
 ---
 
 <html lang="en-Us">
   <head>
-    <HeadSeo />
+    <HeadSeo title={title} />
     <link rel="stylesheet" href="/styles/index.css" />
   </head>
   <body>
