@@ -1,8 +1,49 @@
 ---
-import Nav from './NAv.astro';
+import Nav from './Nav.astro';
 ---
 
-<header class="nav-varHeader">
-  <div aria-label="Website logo" class="logo-navDiv">NikeLite</div>
+<header
+  id="header"
+  class="flex items-center justify-between"
+  data-fixed="false"
+>
+  <a
+    href="/"
+    aria-label="Website logo"
+    class="italic font-extrabold capitalize text-xl cursor-pointer hover:text-gray-600"
+  >
+    NikeLite
+  </a>
   <Nav />
 </header>
+
+<style>
+  header {
+    padding: 0 2rem;
+    position: relative;
+    transition: all 300ms ease-in-out;
+  }
+
+  header {
+  }
+
+  header[data-fixed='true'] {
+    transition: all 300ms ease-in-out;
+    background-color: var(--theme-bg);
+    position: fixed;
+    inset: 0 0 auto 0;
+  }
+</style>
+
+<script>
+  const header = document.getElementById('header');
+
+  window.addEventListener('scroll', () => {
+    if (window.pageYOffset >= 100) {
+      header.setAttribute('data-fixed', 'true');
+    } else {
+      header.setAttribute('data-fixed', 'false');
+    }
+    console.log(window.pageYOffset);
+  });
+</script>

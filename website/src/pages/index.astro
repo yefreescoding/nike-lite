@@ -14,7 +14,7 @@ import SectionMember from '../components/SectionMember.astro';
 
 <DefaultLayout title="NikeLite | Just Do It">
   <Header />
-  <main>
+  <main class="grid gap-4">
     <SectionHero />
     <SectionTrending />
     <SectionFeatured />
@@ -23,3 +23,10 @@ import SectionMember from '../components/SectionMember.astro';
   </main>
   <Footer />
 </DefaultLayout>
+
+<style>
+  main {
+    width: min(100%, 85em);
+    margin: 0 auto;
+  }
+</style>

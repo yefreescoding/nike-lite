@@ -1,4 +1,5 @@
 ---
+import Links from './Links.astro';
 const navLinks = [
   {
     name: 'Men',
@@ -15,15 +16,23 @@ const navLinks = [
 ];
 ---
 
-<nav aria-label="Bar navigation of the website">
-  <ul aria-label="Navigation links">
+<nav
+  aria-label="Bar navigation of the website"
+  class="flex-1 flex items-center justify-between p-4"
+>
+  <ul aria-label="Navigation links" class="flex flex-1 justify-center gap-4">
     {
       navLinks.map((link) => (
         <li>
-          <a href={link.href}>{link.name}</a>
+          <a
+            class="p-4 border-b-4 border-transparent hover:border-gray-900 transition-all"
+            href={link.href}
+          >
+            {link.name}
+          </a>
         </li>
       ))
     }
   </ul>
-  <a href="/joinUs/">Join Us</a>
+  <Links name="Join Us" href="/join/" isFilled={true} />
 </nav>

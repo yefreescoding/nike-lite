@@ -1,0 +1,24 @@
+---
+interface Props {
+  href: string;
+  name: string;
+  isFilled?: boolean;
+}
+
+const { href, name, isFilled } = Astro.props;
+---
+
+<a href={href} data-filled={isFilled ? 'true' : 'false'}>
+  {name}
+</a>
+
+<style>
+  a {
+    @apply px-4 py-2  rounded-full border border-transparent font-bold hover:opacity-80 transition-all;
+  }
+
+  a[data-filled='true'] {
+    background-color: var(--theme-link);
+    color: var(--theme-bg);
+  }
+</style>
