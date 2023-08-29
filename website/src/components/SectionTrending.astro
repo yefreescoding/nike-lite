@@ -2,12 +2,34 @@
 import CardLink from './CardLink.astro';
 ---
 
-<section>
-  <h2>Trending</h2>
-  <div class="grid grid-cols-4">
-    <CardLink name="testing" image="/Images/cards/card-image-1.jpg" />
-    <CardLink name="testing" image="/Images/cards/card-image-1.jpg" />
-    <CardLink name="testing" image="/Images/cards/card-image-1.jpg" />
-    <CardLink name="testing" image="/Images/cards/card-image-1.jpg" />
+<section class="p-4 my-12">
+  <h2 class="text-2xl font-bold mb-8">Trending</h2>
+  <div
+    class="overflow-scroll p-4 grid gap-4 grid-flow-col auto-cols-[30%] snap-mandatory"
+  >
+    <CardLink
+      name="Memebers: find your dunk"
+      image="/Images/cards/card-image-1.jpg"
+      alt="Clothing"
+      classes="snap-start"
+    />
+    <CardLink
+      name="Men's training essentials"
+      image="/Images/men-training.jpg"
+      alt="Clothing"
+      classes="snap-start"
+    />
+    <CardLink
+      name="Nike style"
+      image="/Images/style-nike.jpg"
+      alt="Clothing"
+      classes="snap-start"
+    />
+    <CardLink
+      name="Jordan Essentials for kids"
+      image="/Images/nike-kids.jpg"
+      alt="Clothing"
+      classes="snap-start"
+    />
   </div>
 </section>

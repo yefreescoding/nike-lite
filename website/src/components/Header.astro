@@ -2,16 +2,24 @@
 import Nav from './Nav.astro';
 ---
 
-<header id="header" class="" data-fixed="false">
-  <a
-    href="/"
-    aria-label="Website logo"
-    class="italic font-extrabold capitalize text-xl cursor-pointer hover:text-gray-600"
-  >
-    NikeLite
-  </a>
-  <Nav />
-</header>
+<>
+  <header id="header" class="" data-fixed="false">
+    <a
+      href="/"
+      aria-label="Home link"
+      class="italic font-extrabold capitalize text-xl cursor-pointer hover:text-gray-600"
+    >
+      NikeLite
+    </a>
+    <Nav />
+  </header>
+  <p class="text-center theme-bg p-4 bg-gray-200">
+    Shop all the arrivals
+    <a class="underline block" href="https://www.nike.com/w/new-3n82y"
+      >Shop now!</a
+    >
+  </p>
+</>
 
 <style>
   header {

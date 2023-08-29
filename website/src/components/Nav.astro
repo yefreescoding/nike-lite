@@ -34,5 +34,13 @@ const navLinks = [
       ))
     }
   </ul>
-  <Links name="Join Us" href="/join/" isFilled={true} />
+  <Links name="Join Us" href="/join/" classes="hide" isFilled={true} />
 </nav>
+
+<style is:global>
+  @media (width < 40em) {
+    .hide {
+      display: none;
+    }
+  }
+</style>

@@ -95,5 +95,27 @@ h6 {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+.theme-bg {
+  background-color: var(--theme-bg);
+}
+.theme-link {
+  background-color: var(--theme-link);
+}
+.theme-text {
+  background-color: var(--theme-text);
+}
+.theme-accent {
+  background-color: var(--theme-accent);
+}
+.theme-accent {
+  background-color: var(--theme-accent-2);
+}
+.theme-quote {
+  background-color: var(--theme-quote);
+}
+.theme-menu {
+  background-color: var(--theme-menu-bg);
+}
+
 @tailwind components;
 @tailwind utilities;

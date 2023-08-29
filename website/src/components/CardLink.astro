@@ -3,16 +3,21 @@ interface Props {
   name: string;
   image: string;
   alt: string;
+  classes?: string;
 }
 
-const { name, image, alt } = Astro.props;
+const { name, image, alt, classes } = Astro.props;
 ---
 
-<a href="/">
-  <article>
-    <div>
-      <img src={image} alt={alt} />
+<a href="/" class:list={['card ', classes]}>
+  <article class="flex flex-col gap-4">
+    <div class="overflow-hidden">
+      <img
+        class="object-cover aspect-square transition-all hover:scale-105"
+        src={image}
+        alt={alt}
+      />
     </div>
-    <h3>{name}</h3>
+    <h3 class="text-xl font-medium">{name}</h3>
   </article>
 </a>

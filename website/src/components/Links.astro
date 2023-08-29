@@ -3,17 +3,22 @@ interface Props {
   href: string;
   name: string;
   isFilled?: boolean;
+  classes?: string;
 }
 
-const { href, name, isFilled } = Astro.props;
+const { href, name, isFilled, classes } = Astro.props;
 ---
 
-<a href={href} data-filled={isFilled ? 'true' : 'false'}>
+<a
+  class:list={['links', classes]}
+  href={href}
+  data-filled={isFilled ? 'true' : 'false'}
+>
   {name}
 </a>
 
 <style>
-  a {
+  a.links {
     @apply px-4 py-2  rounded-full border border-transparent font-bold hover:opacity-80 transition-all;
   }
 
