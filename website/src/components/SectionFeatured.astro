@@ -1,22 +1,62 @@
 ---
+// component imports
+import Links from './Links.astro';
+
+// images
+
+const shoes = [
+  {
+    image: '/Images/shoes/nike-logo.jpg',
+    alt: 'Nike Air max logo',
+  },
+  {
+    image: '/Images/shoes/shoes-featured.png',
+    alt: 'Nike Air max logo',
+  },
+  {
+    image: '/Images/shoes/shoes-featured.png',
+    alt: 'Nike Air max logo',
+  },
+  {
+    image: '/Images/shoes/shoes-featured.png',
+    alt: 'Nike Air max logo',
+  },
+];
 ---
 
-<section aria-labelBy="featured" class="p-4 my-12">
-  <h2 id="featured">Featured</h2>
-  <div class="grid grid-cols-1 md:grid-cols-2">
-    <div>
-      <img src="/Images/featured-img.jpg" alt="Nike runing shoes" />
-    </div>
-    <div>
-      <div class="grid grid-cols-2">
-        <img src="/Images/shoes/nike-logo.jpg" alt="Shoes display" />
-        <img src="/Images/shoes/shoes-featured.png" alt="Shoes display" />
-        <img src="/Images/shoes/shoes-featured-2.png" alt="Shoes display" />
-        <img src="/Images/shoes/shoes-featured-3.png" alt="Shoes display" />
+<section id="featured" aria-labelBy="featured" class="p-4 my-12">
+  <h2 class="text-2xl font-bold mb-8">Featured</h2>
+  <div class="lg:h-[40em] grid gap-4 grid-cols-1 lg:grid-cols-2">
+    <article class="relative h-full">
+      <img
+        class="object-cover w-full h-[40em]"
+        src="/Images/featured-img.jpg"
+        alt="Woman doing yoga"
+      />
+      <div
+        class="absolute bottom-4 p-4 flex flex-col items-start gap-6 w-[18em]"
+      >
+        <h3 class="font-bold text-2xl">Rise and Shine in phoenix fleece</h3>
+        <Links name="Shop" href="/" isFilled={true} />
       </div>
-      <div>
-        <p>Must-Have Air Max</p>
-        <a href="/">Shop All</a>
+    </article>
+    <div class="flex flex-col aspect-[6/4]">
+      <div class="lg:h-full flex-1 grid grid-cols-2 border border-gray-900">
+        {
+          shoes.map((shoe) => (
+            <img
+              class="border border-gray-800 p-4 aspect-video object-contain object-center w-full"
+              src={shoe.image}
+              alt={shoe.alt}
+            />
+          ))
+        }
+      </div>
+      <div
+        class="p-6 lg:h-[12em] flex flex-col items-start justify-center gap-4"
+      >
+        <p class="font-bold text-2xl">Must-Have Air Max</p>
+        <Links name="Shop All" href="/" isFilled={true} />
       </div>
     </div>
   </div>
