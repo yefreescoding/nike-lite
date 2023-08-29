@@ -10,7 +10,6 @@ import SectionTrending from '../components/SectionTrending.astro';
 import SectionShoes from '../components/SectionShoes';
 import Footer from '../components/Footer.astro';
 import SectionMember from '../components/SectionMember.astro';
-import HeaderScroll from '../components/HeaderScroll.astro';
 ---
 
 <DefaultLayout title="NikeLite | Just Do It">
@@ -22,13 +21,13 @@ import HeaderScroll from '../components/HeaderScroll.astro';
     <SectionShoes client:only />
     <SectionMember />
   </main>
-  <!-- <Footer /> -->
+  <Footer />
 </DefaultLayout>
 
 <style>
   main {
     @apply relative;
-    width: min(100%, 100em);
+    width: min(100%, 106em);
     margin: 0 auto;
   }
 </style>

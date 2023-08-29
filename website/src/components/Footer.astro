@@ -1,5 +1,5 @@
 ---
-const featured = [
+const FEATURED_LINKS = [
   {
     name: 'Air Force 1',
     href: '/',
@@ -17,7 +17,7 @@ const featured = [
     href: '/',
   },
 ];
-const shoes = [
+const SHOES_LINKS = [
   {
     name: 'All shoes',
     href: '/',
@@ -85,20 +85,23 @@ const kids = [
 ];
 ---
 
-<footer class="page-endFooter">
-  <div>
-    <span class="column-link-main">NikeLite</span>
+<footer
+  class="p-12 flex gap-4 flex-col md:flex-row justify-between items-start bg-gray-900 text-white"
+>
+  <div class="w-full md:w-[60ch]">
+    <h2 class="text-3xl font-extrabold italic mb-4">NikeLite</h2>
     <p>
       This is a side project build to learn purposes all the images, information
-      and data showed on this website is owned by Nike inc
+      and data showed on this website is owned by <strong>Nike inc.</strong>
     </p>
-    <span>Made with Love By Yefree De Los Santos Valdez</span>
+    <p>© 2023 Nike, Inc. All Rights Reserved.</p>
+    <p>Made By Yefree De Los Santos</p>
   </div>
   <div class="link-div">
-    <h3 class="column-link-main">Featured</h3>
+    <h3 class="text-xl font-bold mb-4 uppercase">Featured</h3>
     <ul>
       {
-        featured.map((link) => (
+        FEATURED_LINKS.map((link) => (
           <li>
             <a href={link.href}>{link.name}</a>
           </li>
@@ -107,10 +110,10 @@ const kids = [
     </ul>
   </div>
   <div class="link-div">
-    <h3 class="column-link-main">Shoes</h3>
+    <h3 class="text-xl font-bold mb-4 uppercase">Shoes</h3>
     <ul>
       {
-        shoes.map((link) => (
+        SHOES_LINKS.map((link) => (
           <li>
             <a href={link.href}>{link.name}</a>
           </li>
@@ -119,7 +122,7 @@ const kids = [
     </ul>
   </div>
   <div class="link-div">
-    <h3 class="column-link-main">clothing</h3>
+    <h3 class="text-xl font-bold mb-4 uppercase">clothing</h3>
     <ul>
       {
         clothing.map((link) => (
@@ -131,7 +134,7 @@ const kids = [
     </ul>
   </div>
   <div class="link-div">
-    <h3 class="column-link-main">kids'</h3>
+    <h3 class="text-xl font-bold mb-4 uppercase">kids'</h3>
     <ul>
       {
         kids.map((link) => (
