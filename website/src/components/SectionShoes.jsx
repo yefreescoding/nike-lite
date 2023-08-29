@@ -30,51 +30,82 @@ export default function SectionShoes() {
     }, speed);
   }
   return (
-    <section>
-      <h2 className="text-2xl font-bold mb-8">Always iconic</h2>
-      <div className="relative bg-blue-200">
+    <section className="my-12">
+      <h2 className="text-2xl font-bold mx-4 my-8">Always iconic</h2>
+      <div className="relative flex p-0">
         <button
           data-direction="left"
           onClick={handleClick}
-          className="z-[9999] absolute left-10 top-[40%] shadow-lg p-4 rounded-full bg-gray-100"
+          className="z-[9999] absolute left-5 top-[40%] shadow-lg p-4 rounded-full bg-gray-100"
         >
           <ChevronLeftIcon className="h-6 w-6 text-blue-800" />
         </button>
         <div
-          id="container"
           ref={containerRef}
-          className="relative overflow-scroll p-4 grid gap-4 grid-flow-col auto-cols-[35%] lg:auto-cols-[20%] snap-x-mandatory"
+          className="overflow-x-scroll grid grid-flow-col auto-cols-[50%] lg:auto-cols-[30%] "
         >
           <article className="snap-center">
-            <img src="/Images/iconic/shoes.webp" alt="" />
+            <img
+              className="aspect-square"
+              src="/Images/iconic/shoes.webp"
+              alt=""
+            />
             <h3>Air Jordan 1</h3>
           </article>
           <article className="snap-center">
-            <img src="/Images/iconic/shoes.webp" alt="" />
+            <img
+              className="aspect-square"
+              src="/Images/iconic/shoes.webp"
+              alt=""
+            />
             <h3>Air Jordan 1</h3>
           </article>
           <article className="snap-center">
-            <img src="/Images/iconic/shoes.webp" alt="" />
+            <img
+              className="aspect-square"
+              src="/Images/iconic/shoes.webp"
+              alt=""
+            />
             <h3>Air Jordan 1</h3>
           </article>
           <article className="snap-center">
-            <img src="/Images/iconic/shoes.webp" alt="" />
+            <img
+              className="aspect-square"
+              src="/Images/iconic/shoes.webp"
+              alt=""
+            />
             <h3>Air Jordan 1</h3>
           </article>
           <article className="snap-center">
-            <img src="/Images/iconic/shoes.webp" alt="" />
+            <img
+              className="aspect-square"
+              src="/Images/iconic/shoes.webp"
+              alt=""
+            />
             <h3>Air Jordan 1</h3>
           </article>
           <article className="snap-center">
-            <img src="/Images/iconic/shoes.webp" alt="" />
+            <img
+              className="aspect-square"
+              src="/Images/iconic/shoes.webp"
+              alt=""
+            />
             <h3>Air Jordan 1</h3>
           </article>
           <article className="snap-center">
-            <img src="/Images/iconic/shoes.webp" alt="" />
+            <img
+              className="aspect-square"
+              src="/Images/iconic/shoes.webp"
+              alt=""
+            />
             <h3>Air Jordan 1</h3>
           </article>
           <article className="snap-center">
-            <img src="/Images/iconic/shoes.webp" alt="" />
+            <img
+              className="aspect-square"
+              src="/Images/iconic/shoes.webp"
+              alt=""
+            />
             <h3>Air Jordan 1</h3>
           </article>
         </div>
