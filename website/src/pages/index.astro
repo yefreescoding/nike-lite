@@ -15,7 +15,7 @@ import HeaderScroll from '../components/HeaderScroll.astro';
 
 <DefaultLayout title="NikeLite | Just Do It">
   <Header />
-  <main class="grid gap-4">
+  <main>
     <SectionHero />
     <SectionTrending />
     <SectionFeatured />
@@ -27,7 +27,8 @@ import HeaderScroll from '../components/HeaderScroll.astro';
 
 <style>
   main {
-    width: min(100%, 90em);
+    @apply relative;
+    width: min(100%, 100em);
     margin: 0 auto;
   }
 </style>

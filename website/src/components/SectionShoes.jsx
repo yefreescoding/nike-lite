@@ -1,16 +1,19 @@
+// react imports
+import { useRef } from 'react';
+
 // Library imports
 import { ChevronLeftIcon } from '@heroicons/react/24/solid';
 import { ChevronRightIcon } from '@heroicons/react/24/solid';
 
-// react imports
-import { useRef } from 'react';
+// data import
+import { ICONIC_SHOES } from '../data/iconicShoes';
 
 export default function SectionShoes() {
   const containerRef = useRef(null);
 
   const handleClick = (e) => {
     const direction = e.target.dataset.direction;
-    sideScroll(containerRef.current, direction, 25, 200, 10);
+    sideScroll(containerRef.current, direction, 15, 400, 10);
     console.log(direction);
   };
 
@@ -30,9 +33,9 @@ export default function SectionShoes() {
     }, speed);
   }
   return (
-    <section className="my-12">
-      <h2 className="text-2xl font-bold mx-4 my-8">Always iconic</h2>
-      <div className="relative flex p-0">
+    <section className="my-12 w-full">
+      <h2 className="text-2xl font-bold ml-4 my-8">Always iconic</h2>
+      <div className="relative flex">
         <button
           data-direction="left"
           onClick={handleClick}
@@ -42,72 +45,16 @@ export default function SectionShoes() {
         </button>
         <div
           ref={containerRef}
-          className="overflow-x-scroll grid grid-flow-col auto-cols-[50%] lg:auto-cols-[30%] "
+          className="overflow-scroll grid gap-4 grid-flow-col auto-cols-[50%] md:auto-cols-[20%]"
         >
-          <article className="snap-center">
-            <img
-              className="aspect-square"
-              src="/Images/iconic/shoes.webp"
-              alt=""
-            />
-            <h3>Air Jordan 1</h3>
-          </article>
-          <article className="snap-center">
-            <img
-              className="aspect-square"
-              src="/Images/iconic/shoes.webp"
-              alt=""
-            />
-            <h3>Air Jordan 1</h3>
-          </article>
-          <article className="snap-center">
-            <img
-              className="aspect-square"
-              src="/Images/iconic/shoes.webp"
-              alt=""
-            />
-            <h3>Air Jordan 1</h3>
-          </article>
-          <article className="snap-center">
-            <img
-              className="aspect-square"
-              src="/Images/iconic/shoes.webp"
-              alt=""
-            />
-            <h3>Air Jordan 1</h3>
-          </article>
-          <article className="snap-center">
-            <img
-              className="aspect-square"
-              src="/Images/iconic/shoes.webp"
-              alt=""
-            />
-            <h3>Air Jordan 1</h3>
-          </article>
-          <article className="snap-center">
-            <img
-              className="aspect-square"
-              src="/Images/iconic/shoes.webp"
-              alt=""
-            />
-            <h3>Air Jordan 1</h3>
-          </article>
-          <article className="snap-center">
-            <img
-              className="aspect-square"
-              src="/Images/iconic/shoes.webp"
-              alt=""
-            />
-            <h3>Air Jordan 1</h3>
-          </article>
-          <article className="snap-center">
-            <img
-              className="aspect-square"
-              src="/Images/iconic/shoes.webp"
-              alt=""
-            />
-            <h3>Air Jordan 1</h3>
-          </article>
+          {ICONIC_SHOES.map((shoe) => (
+            <article className="snap-center">
+              <a href={shoe.href}>
+                <img className="aspect-square w-full" src={shoe.image} alt="" />
+                <h3>{shoe.name}</h3>
+              </a>
+            </article>
+          ))}
         </div>
         <button
           data-direction="right"
