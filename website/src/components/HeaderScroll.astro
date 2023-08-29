@@ -3,14 +3,19 @@
 
 <script>
   const header = document.getElementById('header');
+  const body = document.getElementById('body');
 
   let prevScroll = 0;
 
   window.addEventListener('scroll', () => {
     if (prevScroll - window.pageYOffset > 0) {
       header.setAttribute('data-fixed', 'true');
+      header.classList.add('hide');
+      body.classList.add('py-[4.625rem]');
     } else {
       header.setAttribute('data-fixed', 'false');
+      header.classList.remove('hide');
+      body.classList.remove('py-[4.625rem]');
     }
     prevScroll = window.pageYOffset;
     console.log(window.pageYOffset);

@@ -1,5 +1,6 @@
 ---
 import HeadSeo from '../components/HeadSeo.astro';
+import HeaderScroll from '../components/HeaderScroll.astro';
 
 const { title } = Astro.props;
 ---
@@ -9,7 +10,8 @@ const { title } = Astro.props;
     <HeadSeo title={title} />
     <link rel="stylesheet" href="/styles/index.css" />
   </head>
-  <body>
+  <body id="body" class="grid">
     <slot />
+    <HeaderScroll />
   </body>
 </html>
